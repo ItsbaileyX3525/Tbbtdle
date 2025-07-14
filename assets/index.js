@@ -379,9 +379,6 @@ function loadSavedGame() {
         currentAnswer = getDailyCharacter();
         updateGuessCounter();
     }
-    
-    // Debug: Show today's character in console (remove in production)
-    console.log("Today's character:", currentAnswer.name);
 }
 
 // Add some fun animations
