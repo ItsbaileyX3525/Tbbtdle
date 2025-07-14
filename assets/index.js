@@ -264,11 +264,11 @@ function displayGuess(character) {
             const correctEpisode = parseEpisode(currentAnswer[category]);
             
             if (guessEpisode < correctEpisode) {
-                cell.classList.add('higher'); // Need to guess HIGHER (later episode)
+                cell.classList.add('higher');
             } else if (guessEpisode > correctEpisode) {
-                cell.classList.add('lower'); // Need to guess LOWER (earlier episode)
+                cell.classList.add('lower');
             } else {
-                cell.classList.add('partial'); // Same season/episode number but different format
+                cell.classList.add('partial');
             }
         } else {
             cell.classList.add('incorrect');
