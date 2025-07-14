@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tbbtdle</title>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="game-title">
+                <span class="title-tb">THEBIG</span><span class="title-b">BANG</span><span class="title-tb">THEORY</span><span class="title-dle">DLE</span>
+            </h1>
+            <button class="changelog-btn" id="changelog-btn">📋 Patch Notes</button>
+        </header>
+
+        <div class="game-board">
+            <div class="instruction-box">
+                <h2>GUESS TODAY'S <span style="font-family: Impact;; font-size: larger;" class="title-tb">BIG</span> <span style="font-family: Impact;; font-size: larger;" class="title-b">BANG</span> <span style="font-family: Impact; font-size: larger;" class="title-tb">THEORY</span> CHARACTER!</h2>
+            </div>
+
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input type="text" class="character-input" placeholder="Character name" autocomplete="off">
+                    <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+                </div>
+                <button class="submit-btn">▶</button>
+            </div>
+
+            <div class="guess-counter">
+                <span id="guess-count">0</span> / 8 guesses
+            </div>
+
+            <div class="category-headers">
+                <div class="category" data-label="Name:">CHARACTER</div>
+                <div class="category" data-label="Gender:">GENDER</div>
+                <div class="category" data-label="Field:">FIELD</div>
+                <div class="category" data-label="Status:">RELATIONSHIP</div>
+                <div class="category" data-label="First:">FIRST EPISODE</div>
+            </div>
+
+            <div class="guesses-container">
+            </div>
+
+            <div class="color-legend">
+                <div class="legend-item">
+                    <div class="color-box correct"></div>
+                    <span>Correct</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box partial"></div>
+                    <span>Partial</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box incorrect"></div>
+                    <span>Incorrect</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box higher"></div>
+                    <span>Higher</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box lower"></div>
+                    <span>Lower</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <span class="notification-message" id="notification-message"></span>
+        <button class="notification-close" id="notification-close">&times;</button>
+    </div>
+
+    <div class="modal-overlay" id="changelog-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Changelog & Patch Notes</h2>
+                <button class="modal-close" id="changelog-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="changelog-entry">
+                    <h3>v1.0.0 - Initial Release</h3>
+                <!--<p class="changelog-date">Previous</p>-->
+                    <ul>
+                        <li><strong>Core game mechanics:</strong> Wordle-style guessing game for Big Bang Theory characters</li>
+                        <li><strong>Daily challenges:</strong> New character to guess each day</li>
+                        <li><strong>Character attributes:</strong> Name, gender, field, relationship status, and first episode</li>
+                        <li><strong>Character roster:</strong> ~85 characters at the moment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/char_list.js"></script>
+    <script src="assets/index.js"></script>
+</body>
+</html>
