@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: url("/assets/tbbt.jpg");
+    background: url("./assets/tbbt.jpg");
     background-size: 100% 100%;
     min-height: 100vh;
     position: relative;
