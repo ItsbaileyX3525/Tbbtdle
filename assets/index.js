@@ -1,3 +1,10 @@
+//Woah you found the index file! This means you know code or are just looking around aimlessly for the answer haha.
+//Well with enough digging you can find the answer because this is entirely static
+//So i cannot hide the answer :(
+
+
+
+
 // Notification System
 function showNotification(message, type = 'default', duration = 5000) {
     const notification = document.getElementById('notification');
@@ -62,7 +69,7 @@ function getDailyCharacter() {
 
 let currentAnswer = getDailyCharacter();
 let guesses = [];
-const MAX_GUESSES = 8;
+const MAX_GUESSES = 10;
 
 // DOM elements
 const characterInput = document.querySelector('.character-input');
@@ -78,7 +85,7 @@ let filteredCharacters = [];
 document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
     loadSavedGame();
-    initializeChangelogModal();
+    initializeNavigationModals();
 });
 
 function setupEventListeners() {
@@ -168,7 +175,6 @@ function handleAutocomplete() {
         return;
     }
     
-    // Limit to top 8 matches for performance
     filteredCharacters = filteredCharacters.slice(0, 8);
     
     showAutocomplete();
@@ -208,15 +214,15 @@ function makeGuess() {
     const guess = characterInput.value.trim();
     if (!guess) return;
 
-    // Check if maximum guesses reached
-    if (guesses.length >= MAX_GUESSES) {
-        showNotification('Maximum number of guesses reached! Game over.', 'error');
-        return;
-    }
-
     const character = characters.find(char => 
         char.name.toLowerCase() === guess.toLowerCase()
     );
+
+    // Check if maximum guesses reached
+    if (guesses.length >= MAX_GUESSES) {
+        showNotification(`Maximum number of guesses reached! Game over. The character was ${character.name}!`, 'error');
+        return;
+    }
 
     if (!character) {
         showNotification('Character not found! Try again.', 'error');
@@ -236,7 +242,7 @@ function makeGuess() {
     if (character.name === currentAnswer.name) {
         celebrateWin();
     } else if (guesses.length >= MAX_GUESSES) {
-        gameOver();
+        gameOver(currentAnswer.name);
     }
 
     saveGame();
@@ -304,9 +310,10 @@ function celebrateWin() {
     }, 500);
 }
 
-function gameOver() {
+function gameOver(characterName) {
     setTimeout(() => {
-        showNotification(`Game Over! 😞 Better luck tomorrow!`, 'error');
+
+        showNotification(`Game Over! The character was ${characterName}! Better luck tomorrow!`, 'error');
         disableInput();
     }, 500);
 }
@@ -415,15 +422,8 @@ displayGuess = function(character) {
 
 // Changelog Modal Functions
 function initializeChangelogModal() {
-    const changelogBtn = document.getElementById('changelog-btn');
     const changelogModal = document.getElementById('changelog-modal');
     const changelogClose = document.getElementById('changelog-close');
-
-    // Open modal
-    changelogBtn.addEventListener('click', () => {
-        changelogModal.classList.add('show');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-    });
 
     // Close modal
     changelogClose.addEventListener('click', closeChangelogModal);
@@ -447,4 +447,58 @@ function closeChangelogModal() {
     const changelogModal = document.getElementById('changelog-modal');
     changelogModal.classList.remove('show');
     document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Rules Modal Functions
+function initializeRulesModal() {
+    const rulesBtn = document.getElementById('rules-btn');
+    const rulesModal = document.getElementById('rules-modal');
+    const rulesClose = document.getElementById('rules-close');
+
+    // Open modal
+    rulesBtn.addEventListener('click', () => {
+        rulesModal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+
+    // Close modal
+    rulesClose.addEventListener('click', closeRulesModal);
+    
+    // Close modal when clicking outside
+    rulesModal.addEventListener('click', (e) => {
+        if (e.target === rulesModal) {
+            closeRulesModal();
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && rulesModal.classList.contains('show')) {
+            closeRulesModal();
+        }
+    });
+}
+
+function closeRulesModal() {
+    const rulesModal = document.getElementById('rules-modal');
+    rulesModal.classList.remove('show');
+    document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Update changelog modal to work with navigation buttons
+function initializeNavigationModals() {
+    // Initialize the existing changelog functionality
+    initializeChangelogModal();
+    
+    // Add navigation button functionality
+    const changelogNavBtn = document.getElementById('changelog-nav-btn');
+    const changelogModal = document.getElementById('changelog-modal');
+    
+    changelogNavBtn.addEventListener('click', () => {
+        changelogModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    });
+    
+    // Initialize rules modal
+    initializeRulesModal();
 }

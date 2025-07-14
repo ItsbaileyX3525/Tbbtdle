@@ -13,8 +13,18 @@
             <h1 class="game-title">
                 <span class="title-tb">THEBIG</span><span class="title-b">BANG</span><span class="title-tb">THEORY</span><span class="title-dle">DLE</span>
             </h1>
-            <button class="changelog-btn" id="changelog-btn">📋 Patch Notes</button>
         </header>
+
+        <nav class="game-nav">
+            <button class="nav-btn rules-btn" id="rules-btn">
+                <span class="nav-icon">📖</span>
+                <span class="nav-text">Rules</span>
+            </button>
+            <button class="nav-btn changelog-nav-btn" id="changelog-nav-btn">
+                <span class="nav-icon">📋</span>
+                <span class="nav-text">Changelog</span>
+            </button>
+        </nav>
 
         <div class="game-board">
             <div class="instruction-box">
@@ -30,7 +40,7 @@
             </div>
 
             <div class="guess-counter">
-                <span id="guess-count">0</span> / 8 guesses
+                <span id="guess-count">0</span> / 10 guesses
             </div>
 
             <div class="category-headers">
@@ -74,6 +84,79 @@
         <button class="notification-close" id="notification-close">&times;</button>
     </div>
 
+    <!-- Rules Modal -->
+    <div class="modal-overlay" id="rules-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>How to Play</h2>
+                <button class="modal-close" id="rules-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="rules-section">
+                    <h3>The Goal</h3>
+                    <p>You have 10 guesses to figure out which Big Bang Theory character is the answer for today.</p>
+                </div>
+                
+                <div class="rules-section">
+                    <h3>How It Works</h3>
+                    <ul>
+                        <li>Start typing a character name - autocomplete will help you out</li>
+                        <li>Hit Enter or click the play button to submit your guess</li>
+                        <li>Each guess gives you clues about the target character</li>
+                        <li>Use the clues to narrow down your next guess</li>
+                    </ul>
+                </div>
+                
+                <div class="rules-section">
+                    <h3>Understanding the Colors</h3>
+                    <div class="color-examples">
+                        <div class="color-example">
+                            <div class="color-box correct"></div>
+                            <span><strong>Green:</strong> Perfect match</span>
+                        </div>
+                        <div class="color-example">
+                            <div class="color-box partial"></div>
+                            <span><strong>Yellow:</strong> Close, but not quite (like same job field)</span>
+                        </div>
+                        <div class="color-example">
+                            <div class="color-box incorrect"></div>
+                            <span><strong>Red:</strong> Nope, not even close</span>
+                        </div>
+                        <div class="color-example">
+                            <div class="color-box higher"></div>
+                            <span><strong>Blue ↑:</strong> The target character showed up later in the series</span>
+                        </div>
+                        <div class="color-example">
+                            <div class="color-box lower"></div>
+                            <span><strong>Purple ↓:</strong> The target character appeared earlier in the series</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rules-section">
+                    <h3>What Each Category Means</h3>
+                    <ul>
+                        <li><strong>Character:</strong> Obviously, their name</li>
+                        <li><strong>Gender:</strong> Male, Female, or Other</li>
+                        <li><strong>Field:</strong> What they do for work or study</li>
+                        <li><strong>Relationship:</strong> Are they single, dating, married, etc?</li>
+                        <li><strong>First Appearance:</strong> When they first showed up (season and episode)</li>
+                    </ul>
+                </div>
+                
+                <div class="rules-section">
+                    <h3>Some Tips</h3>
+                    <ul>
+                        <li>If you're stuck, try guessing main characters first</li>
+                        <li>The relationship status and job clues are usually pretty helpful</li>
+                        <li>First appearance can help you figure out if it's an early or late series character</li>
+                        <li>Don't forget about recurring characters - it's not always the main cast!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal-overlay" id="changelog-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -82,8 +165,18 @@
             </div>
             <div class="modal-body">
                 <div class="changelog-entry">
+                    <h3>v1.1.0 - Design overhaul</h3>
+                    <ul>
+                        <p>I've received many complaints about the design of the game, specifically the font that I chose, so this update changes that font to a more readable one.</p>
+                        <li><strong>Guessing: </strong> I've added the ability to see the character for todays tbbtdle when you lose the game</li>
+                        <li><strong>Guesses: </strong> To allow for more room of error I have increased the max guesses from 8 => 10!</li>
+                       <li><strong>Fonts: </strong> Switching over from comic sans MS to a more socially acceptable one, and based on Sheldon's favourite font, Helvetica</li>
+                       <li><strong>Information: </strong> You can now click on the rules button to see how to play the game and some tips you can use to guess the character fast!</li>
+                    </ul>
+                </div>
+                <div class="changelog-entry">
                     <h3>v1.0.0 - Initial Release</h3>
-                <!--<p class="changelog-date">Previous</p>-->
+                <p class="changelog-date">Previous</p>
                     <ul>
                         <li><strong>Core game mechanics:</strong> Wordle-style guessing game for Big Bang Theory characters</li>
                         <li><strong>Daily challenges:</strong> New character to guess each day</li>

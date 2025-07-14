@@ -13,9 +13,12 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: url("tbbt.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
@@ -73,6 +76,69 @@ body {
 
 .title-dle {
     color: #f1c40f; /* Yellow */
+}
+
+/* Navigation Bar */
+.game-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 100px;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(45deg, #2980b9, #21618c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+
+.nav-text {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rules-btn {
+    background: linear-gradient(45deg, #27ae60, #229954);
+}
+
+.rules-btn:hover {
+    background: linear-gradient(45deg, #229954, #1e8449);
+}
+
+.changelog-nav-btn {
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+}
+
+.changelog-nav-btn:hover {
+    background: linear-gradient(45deg, #e67e22, #d35400);
 }
 
 .game-board {
@@ -397,7 +463,7 @@ body {
     max-width: 400px;
     min-width: 300px;
     z-index: 1000;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     animation: slideIn 0.3s ease-out;
 }
@@ -599,35 +665,6 @@ body {
     }
 }
 
-/* Changelog Button */
-.changelog-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    background: linear-gradient(45deg, #f39c12, #e67e22);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.changelog-btn:hover {
-    background: linear-gradient(45deg, #e67e22, #d35400);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.changelog-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
 /* Modal Styles */
 .modal-overlay {
     position: fixed;
@@ -766,18 +803,106 @@ body {
         font-size: 20px;
     }
     
-    .changelog-btn {
-        font-size: 12px;
-        padding: 6px 12px;
-        right: 15px;
-        top: 12px;
-    }
-    
     .changelog-entry {
         padding: 15px;
     }
     
     .changelog-entry h3 {
         font-size: 18px;
+    }
+}
+
+/* Rules Modal Specific Styles */
+.rules-section {
+    margin-bottom: 25px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    border-left: 5px solid #27ae60;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules-section:last-child {
+    margin-bottom: 0;
+}
+
+.rules-section h3 {
+    color: #2c3e50;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.rules-section p {
+    color: #2c3e50;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.rules-section ul {
+    margin-left: 20px;
+    color: #2c3e50;
+}
+
+.rules-section li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.color-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-example {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.color-example .color-box {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.color-example span {
+    color: #2c3e50;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .game-nav {
+        gap: 15px;
+        margin: 10px 0;
+    }
+    
+    .nav-btn {
+        min-width: 80px;
+        padding: 10px 15px;
+    }
+    
+    .nav-icon {
+        font-size: 18px;
+    }
+    
+    .nav-text {
+        font-size: 10px;
+    }
+    
+    .rules-section {
+        padding: 15px;
+    }
+    
+    .rules-section h3 {
+        font-size: 16px;
+    }
+    
+    .color-examples {
+        gap: 8px;
     }
 }
