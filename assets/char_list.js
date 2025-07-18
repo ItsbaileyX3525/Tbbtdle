@@ -277,13 +277,20 @@ const characters = [
         firstEpisode: "S3E8"
     },
     {
-        name: "Mrs. Davis",
+        name: "Janine Davis",
         gender: "Female",
-        field: "HR Department",
+        field: "Human Resources",
         relationship: "Unknown",
         firstEpisode: "S2E6"
     },
     // Other Characters
+    {
+        name: "David Underhill",
+        gender: "Male",
+        field: "Physics",
+        relationship: "Divorced",
+        firstEpisode: "S2E11"
+    },
     {
         name: "Christy",
         gender: "Female",
@@ -447,102 +454,11 @@ const characters = [
         firstEpisode: "S12E4"
     },
     {
-        name: "Paige Swanson",
-        gender: "Female",
-        field: "Child Prodigy",
-        relationship: "Single",
-        firstEpisode: "YS S2E2"
-    },
-    {
-        name: "Dr. John Sturgis",
-        gender: "Male",
-        field: "Physics Professor",
-        relationship: "Single",
-        firstEpisode: "YS S1E5"
-    },
-    {
-        name: "Pastor Jeff",
-        gender: "Male",
-        field: "Religious Leader",
-        relationship: "Married",
-        firstEpisode: "YS S1E1"
-    },
-    {
-        name: "Billy Sparks",
-        gender: "Male",
-        field: "Student",
-        relationship: "Single",
-        firstEpisode: "YS S1E1"
-    },
-    {
-        name: "Brenda Sparks",
-        gender: "Female",
-        field: "Bowling Alley Worker",
-        relationship: "Divorced",
-        firstEpisode: "YS S1E4"
-    },
-    {
-        name: "Herschel Sparks",
-        gender: "Male",
-        field: "Garage Owner",
-        relationship: "Divorced",
-        firstEpisode: "YS S1E4"
-    },
-    {
-        name: "Dale Ballard",
-        gender: "Male",
-        field: "Sporting Goods Store",
-        relationship: "Dating",
-        firstEpisode: "YS S2E6"
-    },
-    {
-        name: "Veronica Duncan",
-        gender: "Female",
-        field: "Student",
-        relationship: "Single",
-        firstEpisode: "YS S2E6"
-    },
-    {
-        name: "Mandy McAllister",
-        gender: "Female",
-        field: "Unknown",
-        relationship: "Married",
-        firstEpisode: "YS S5E17"
-    },
-    {
-        name: "Jim McAllister",
-        gender: "Male",
-        field: "Tire Store Owner",
-        relationship: "Married",
-        firstEpisode: "YS S6E1"
-    },
-    {
-        name: "Audrey McAllister",
-        gender: "Female",
-        field: "Homemaker",
-        relationship: "Married",
-        firstEpisode: "YS S6E1"
-    },
-    {
-        name: "Connor McAllister",
-        gender: "Male",
-        field: "Musician",
-        relationship: "Single",
-        firstEpisode: "YS S6E1"
-    },
-    {
         name: "Jimmy Speckerman",
         gender: "Male",
         field: "Unknown",
         relationship: "Married",
         firstEpisode: "S5E11"
-    },
-    {
-        name: "Janine Davis",
-        gender: "Female",
-        field: "Human Resources",
-        relationship: "Unknown",
-        firstEpisode: "S6E3"
     },
     {
         name: "Ruchi",
@@ -578,5 +494,258 @@ const characters = [
         field: "Unknown",
         relationship: "Married",
         firstEpisode: "S12E10"
-    }
+    },
+    {
+        name: "Martha",
+        gender: "Female",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S6E16"
+    },
+    {
+        name: "Cinnamon",
+        gender: "Female",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S5E20"
+    },
+    {
+        name: "Mrs. Gunderson",
+        gender: "Female",
+        field: "Neighbor",
+        relationship: "Unknown",
+        firstEpisode: "S4E16"
+    },
+    {
+        name: "Carrie Fisher",
+        gender: "Female",
+        field: "Acting",
+        relationship: "Single",
+        firstEpisode: "S7E14"
+    },
+    {
+        name: "LeVar Burton",
+        gender: "Male",
+        field: "Acting",
+        relationship: "Married",
+        firstEpisode: "S6E5"
+    },
+    {
+        name: "Joyce Kim",
+        gender: "Female",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S1E8"
+    },
+    {
+        name: "Adoot Koothrappali",
+        gender: "Male",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S11E23"
+    },
+    {
+        name: "Venkatesh Koothrappali",
+        gender: "Male",
+        field: "Laywer",
+        relationship: "Unknown",
+        firstEpisode: "S3E17"
+    },
+    {
+        name: "Katie",
+        gender: "Female",
+        field: "Saleswoman",
+        relationship: "Single",
+        firstEpisode: "???"
+    },
+    // Additional Recurring Characters
+    {
+        name: "Pop-Pop (Leonard's Grandfather)",
+        gender: "Male",
+        field: "Retired",
+        relationship: "Deceased",
+        firstEpisode: "S2E15"
+    },
+    {
+        name: "Alfred Hofstadter",
+        gender: "Male",
+        field: "Anthropology",
+        relationship: "Divorced",
+        firstEpisode: "S2E15"
+    },
+    {
+        name: "Michael Hofstadter",
+        gender: "Male",
+        field: "Law",
+        relationship: "Married",
+        firstEpisode: "S2E15"
+    },
+    {
+        name: "Mrs. Latham",
+        gender: "Female",
+        field: "University Donor",
+        relationship: "Widowed",
+        firstEpisode: "S6E13"
+    },
+    {
+        name: "Dimitri Rezinov",
+        gender: "Male",
+        field: "Cosmonaut",
+        relationship: "Unknown",
+        firstEpisode: "S6E1"
+    },
+    {
+        name: "Abby",
+        gender: "Female",
+        field: "Forensic Scientist",
+        relationship: "Single",
+        firstEpisode: "S5E14"
+    },
+    {
+        name: "Glenn",
+        gender: "Male",
+        field: "Comic Book Store Customer",
+        relationship: "Unknown",
+        firstEpisode: "S2E20"
+    },
+    {
+        name: "Dr. Tyson",
+        gender: "Male",
+        field: "Astrophysics",
+        relationship: "Married",
+        firstEpisode: "S4E7"
+    },
+    {
+        name: "Mr. D'Onofrio",
+        gender: "Male",
+        field: "Barber",
+        relationship: "Unknown",
+        firstEpisode: "S6E11"
+    },
+    {
+        name: "Mrs. Vartabedian",
+        gender: "Female",
+        field: "Neighbor",
+        relationship: "Unknown",
+        firstEpisode: "S2E7"
+    },
+    {
+        name: "University Security Guard",
+        gender: "Male",
+        field: "Security",
+        relationship: "Unknown",
+        firstEpisode: "S3E21"
+    },
+    {
+        name: "Cafeteria Worker",
+        gender: "Female",
+        field: "Food Service",
+        relationship: "Unknown",
+        firstEpisode: "S1E2"
+    },
+    {
+        name: "Dr. Crawley",
+        gender: "Male",
+        field: "Physics",
+        relationship: "Unknown",
+        firstEpisode: "S1E13"
+    },
+    {
+        name: "Dr. Saltzberg",
+        gender: "Male",
+        field: "Physics",
+        relationship: "Unknown",
+        firstEpisode: "S3E15"
+    },
+    {
+        name: "Penny's Landlord",
+        gender: "Male",
+        field: "Property Management",
+        relationship: "Unknown",
+        firstEpisode: "S4E16"
+    },
+    {
+        name: "Building Superintendent",
+        gender: "Male",
+        field: "Building Maintenance",
+        relationship: "Unknown",
+        firstEpisode: "S3E22"
+    },
+    {
+        name: "Delivery Guy",
+        gender: "Male",
+        field: "Delivery",
+        relationship: "Unknown",
+        firstEpisode: "S1E2"
+    },
+    {
+        name: "Mrs. Koonce",
+        gender: "Female",
+        field: "Neighbor",
+        relationship: "Unknown",
+        firstEpisode: "S4E16"
+    },
+    {
+        name: "Sheldon's Cousin Leopold",
+        gender: "Male",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S11E24"
+    },
+    {
+        name: "Howard's Cousin",
+        gender: "Male",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S8E15"
+    },
+    {
+        name: "Sanjay Koothrappali",
+        gender: "Male",
+        field: "Unknown",
+        relationship: "Single",
+        firstEpisode: "S3E17"
+    },
+    {
+        name: "Mrs. Petrescu",
+        gender: "Female",
+        field: "Neighbor",
+        relationship: "Unknown",
+        firstEpisode: "S4E16"
+    },
+    {
+        name: "Leonard's Therapist",
+        gender: "Male",
+        field: "Psychology",
+        relationship: "Unknown",
+        firstEpisode: "S2E15"
+    },
+    {
+        name: "Raj's Therapist",
+        gender: "Female",
+        field: "Psychology",
+        relationship: "Unknown",
+        firstEpisode: "S6E16"
+    },
+    {
+        name: "Comic Book Store Clerk",
+        gender: "Male",
+        field: "Comic Book Store",
+        relationship: "Unknown",
+        firstEpisode: "S2E20"
+    },
+    {
+        name: "University Librarian",
+        gender: "Female",
+        field: "Library Science",
+        relationship: "Unknown",
+        firstEpisode: "S3E21"
+    },
+    {
+        name: "Physics Lab Assistant",
+        gender: "Male",
+        field: "Physics",
+        relationship: "Unknown",
+        firstEpisode: "S1E13"
+    },
 ];
