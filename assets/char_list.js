@@ -62,7 +62,7 @@ const characters = [
         gender: "Male",
         field: "Plasma Physics",
         relationship: "Single",
-        firstEpisode: "S2E6"
+        firstEpisode: "S2E12"
     },
     {
         name: "Leslie Winkle",
@@ -82,15 +82,15 @@ const characters = [
         name: "Priya Koothrappali",
         gender: "Female",
         field: "Law",
-        relationship: "Single",
-        firstEpisode: "S4E21"
+        relationship: "Married",
+        firstEpisode: "S4E6"
     },
     {
         name: "Emily Sweeney",
         gender: "Female",
         field: "Dermatology",
         relationship: "Single",
-        firstEpisode: "S7E15"
+        firstEpisode: "S7E17"
     },
     {
         name: "Alex Jensen",
@@ -104,7 +104,7 @@ const characters = [
         gender: "Male",
         field: "Unknown",
         relationship: "Married",
-        firstEpisode: "S2E22"
+        firstEpisode: "S3E23"
     },
     {
         name: "Lucy",
@@ -118,7 +118,7 @@ const characters = [
         gender: "Female",
         field: "Screenwriting",
         relationship: "Single",
-        firstEpisode: "S8E6"
+        firstEpisode: "S9E14"
     },
     {
         name: "Ramona Nowitzki",
@@ -139,7 +139,7 @@ const characters = [
         gender: "Female",
         field: "Comic Book Store",
         relationship: "In Relationship",
-        firstEpisode: "S11E2"
+        firstEpisode: "S11E21"
     },
     // Family Members
     {
@@ -164,13 +164,6 @@ const characters = [
         firstEpisode: "S1E1"
     },
     {
-        name: "George Cooper Sr.",
-        gender: "Male",
-        field: "High School Coach",
-        relationship: "Deceased",
-        firstEpisode: "S1E4"
-    },
-    {
         name: "Missy Cooper",
         gender: "Female",
         field: "Unknown",
@@ -188,36 +181,36 @@ const characters = [
         name: "V.M. Koothrappali",
         gender: "Male",
         field: "Gynecology",
-        relationship: "Married",
-        firstEpisode: "S1E7"
+        relationship: "Divorced",
+        firstEpisode: "S1E8"
     },
     {
         name: "Mrs. Koothrappali",
         gender: "Female",
         field: "Homemaker",
-        relationship: "Married",
-        firstEpisode: "S1E7"
+        relationship: "Divorced",
+        firstEpisode: "S1E8"
     },
     {
         name: "Wyatt",
         gender: "Male",
-        field: "Pharmaceutical Sales",
-        relationship: "Divorced",
-        firstEpisode: "S2E22"
+        field: "Farmer",
+        relationship: "Married",
+        firstEpisode: "S4E9"
     },
     {
         name: "Susan",
         gender: "Female",
         field: "Unknown",
-        relationship: "Divorced",
-        firstEpisode: "S2E22"
+        relationship: "Married",
+        firstEpisode: "S10E1"
     },
     {
         name: "Randall",
         gender: "Male",
         field: "Unknown",
-        relationship: "Married",
-        firstEpisode: "S2E22"
+        relationship: "Single",
+        firstEpisode: "S10E1"
     },
     // University Colleagues
     {
@@ -225,21 +218,14 @@ const characters = [
         gender: "Male",
         field: "University President",
         relationship: "Unknown",
-        firstEpisode: "S3E21"
+        firstEpisode: "S3E9"
     },
     {
         name: "Dr. Gablehauser",
         gender: "Male",
         field: "Physics Department Head",
         relationship: "Unknown",
-        firstEpisode: "S1E3"
-    },
-    {
-        name: "Janitor",
-        gender: "Male",
-        field: "Janitor",
-        relationship: "Unknown",
-        firstEpisode: "S1E2"
+        firstEpisode: "S1E4"
     },
     {
         name: "Professor Proton",
@@ -253,37 +239,36 @@ const characters = [
         gender: "Female",
         field: "Surgery",
         relationship: "Single",
-        firstEpisode: "S2E7"
+        firstEpisode: "S2E8"
     },
     {
         name: "Dr. Elizabeth Plimpton",
         gender: "Female",
         field: "Cosmological Physics",
         relationship: "Single",
-        firstEpisode: "S3E15"
+        firstEpisode: "S3E20"
     },
     {
         name: "Bert Kibbler",
         gender: "Male",
         field: "Geology",
         relationship: "Single",
-        firstEpisode: "S6E24"
+        firstEpisode: "S6E18"
     },
     {
         name: "Dr. Lorvis",
         gender: "Male",
         field: "Psychiatry",
         relationship: "Unknown",
-        firstEpisode: "S3E8"
+        firstEpisode: "S8E7"
     },
     {
         name: "Janine Davis",
         gender: "Female",
         field: "Human Resources",
-        relationship: "Unknown",
-        firstEpisode: "S2E6"
+        relationship: "Divorced",
+        firstEpisode: "S6E12"
     },
-    // Other Characters
     {
         name: "David Underhill",
         gender: "Male",
@@ -296,35 +281,35 @@ const characters = [
         gender: "Female",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S1E3"
+        firstEpisode: "S1E7"
     },
     {
         name: "Kurt",
         gender: "Male",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S1E17"
+        firstEpisode: "S1E1"
     },
     {
         name: "Mike",
         gender: "Male",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S1E3"
+        firstEpisode: "S1E14"
     },
     {
         name: "Lalita Gupta",
         gender: "Female",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S1E7"
+        firstEpisode: "S1E8"
     },
     {
         name: "Alicia",
         gender: "Female",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S1E8"
+        firstEpisode: "S1E9"
     },
     {
         name: "Connie Tucker",
@@ -338,7 +323,7 @@ const characters = [
         gender: "Male",
         field: "Author",
         relationship: "Married",
-        firstEpisode: "S5E21"
+        firstEpisode: "S11E21"
     },
     {
         name: "Stan Lee",
@@ -359,14 +344,7 @@ const characters = [
         gender: "Male",
         field: "Science Education",
         relationship: "Single",
-        firstEpisode: "S12E22"
-    },
-    {
-        name: "Neil deGrasse Tyson",
-        gender: "Male",
-        field: "Astrophysics",
-        relationship: "Married",
-        firstEpisode: "S4E7"
+        firstEpisode: "S7E7"
     },
     {
         name: "Stephen Hawking",
@@ -376,21 +354,7 @@ const characters = [
         firstEpisode: "S5E21"
     },
     {
-        name: "Lewis",
-        gender: "Male",
-        field: "Comic Book Store",
-        relationship: "Unknown",
-        firstEpisode: "S2E20"
-    },
-    {
         name: "Captain Sweatpants",
-        gender: "Male",
-        field: "Comic Book Store",
-        relationship: "Unknown",
-        firstEpisode: "S2E20"
-    },
-    {
-        name: "Comic Book Guy",
         gender: "Male",
         field: "Comic Book Store",
         relationship: "Unknown",
@@ -416,7 +380,7 @@ const characters = [
         gender: "Male",
         field: "Unknown",
         relationship: "Unknown",
-        firstEpisode: "S8E15"
+        firstEpisode: "S8E20"
     },
     {
         name: "Halley Wolowitz",
@@ -430,21 +394,21 @@ const characters = [
         gender: "Male",
         field: "Baby",
         relationship: "Single",
-        firstEpisode: "S11E17"
+        firstEpisode: "S11E16"
     },
     {
         name: "Mike Rostenkowski",
         gender: "Male",
         field: "Retired Police",
         relationship: "Married",
-        firstEpisode: "S5E9"
+        firstEpisode: "S5E23"
     },
     {
         name: "Mrs. Rostenkowski",
         gender: "Female",
         field: "Homemaker",
         relationship: "Married",
-        firstEpisode: "S5E9"
+        firstEpisode: "S5E24"
     },
     {
         name: "Tam Nguyen",
@@ -465,42 +429,42 @@ const characters = [
         gender: "Female",
         field: "Pharmaceutical",
         relationship: "Single",
-        firstEpisode: "S11E4"
+        firstEpisode: "S11E3"
     },
     {
         name: "Colonel Williams",
         gender: "Male",
         field: "Military",
         relationship: "Married",
-        firstEpisode: "S9E7"
+        firstEpisode: "S10E1"
     },
     {
         name: "Dr. Kevin Campbell",
         gender: "Male",
         field: "Physics",
         relationship: "Unknown",
-        firstEpisode: "S12E15"
+        firstEpisode: "S12E13"
     },
     {
         name: "Dr. Greg Pemberton",
         gender: "Male",
         field: "Physics",
         relationship: "Unknown",
-        firstEpisode: "S12E15"
+        firstEpisode: "S12E13"
     },
     {
         name: "Marissa Johnson",
         gender: "Female",
         field: "Unknown",
         relationship: "Married",
-        firstEpisode: "S12E10"
+        firstEpisode: "S12E12"
     },
     {
         name: "Martha",
         gender: "Female",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S6E16"
+        firstEpisode: "S3E12"
     },
     {
         name: "Cinnamon",
@@ -514,7 +478,7 @@ const characters = [
         gender: "Female",
         field: "Neighbor",
         relationship: "Unknown",
-        firstEpisode: "S4E16"
+        firstEpisode: "S3E23"
     },
     {
         name: "Carrie Fisher",
@@ -528,14 +492,14 @@ const characters = [
         gender: "Male",
         field: "Acting",
         relationship: "Married",
-        firstEpisode: "S6E5"
+        firstEpisode: "S4E17"
     },
     {
         name: "Joyce Kim",
         gender: "Female",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S1E8"
+        firstEpisode: "S3E22"
     },
     {
         name: "Adoot Koothrappali",
@@ -558,55 +522,33 @@ const characters = [
         relationship: "Single",
         firstEpisode: "???"
     },
-    // Additional Recurring Characters
-    {
-        name: "Pop-Pop (Leonard's Grandfather)",
-        gender: "Male",
-        field: "Retired",
-        relationship: "Deceased",
-        firstEpisode: "S2E15"
-    },
     {
         name: "Alfred Hofstadter",
         gender: "Male",
         field: "Anthropology",
         relationship: "Divorced",
-        firstEpisode: "S2E15"
-    },
-    {
-        name: "Michael Hofstadter",
-        gender: "Male",
-        field: "Law",
-        relationship: "Married",
-        firstEpisode: "S2E15"
+        firstEpisode: "S9E24"
     },
     {
         name: "Mrs. Latham",
         gender: "Female",
         field: "University Donor",
-        relationship: "Widowed",
-        firstEpisode: "S6E13"
+        relationship: "Unknown",
+        firstEpisode: "S4E15"
     },
     {
         name: "Dimitri Rezinov",
         gender: "Male",
         field: "Cosmonaut",
         relationship: "Unknown",
-        firstEpisode: "S6E1"
+        firstEpisode: "S5E24"
     },
     {
         name: "Abby",
         gender: "Female",
         field: "Forensic Scientist",
         relationship: "Single",
-        firstEpisode: "S5E14"
-    },
-    {
-        name: "Glenn",
-        gender: "Male",
-        field: "Comic Book Store Customer",
-        relationship: "Unknown",
-        firstEpisode: "S2E20"
+        firstEpisode: "S3E12"
     },
     {
         name: "Dr. Tyson",
@@ -620,56 +562,21 @@ const characters = [
         gender: "Male",
         field: "Barber",
         relationship: "Unknown",
-        firstEpisode: "S6E11"
+        firstEpisode: "S5E18"
     },
     {
         name: "Mrs. Vartabedian",
         gender: "Female",
         field: "Neighbor",
         relationship: "Unknown",
-        firstEpisode: "S2E7"
-    },
-    {
-        name: "University Security Guard",
-        gender: "Male",
-        field: "Security",
-        relationship: "Unknown",
-        firstEpisode: "S3E21"
-    },
-    {
-        name: "Cafeteria Worker",
-        gender: "Female",
-        field: "Food Service",
-        relationship: "Unknown",
-        firstEpisode: "S1E2"
+        firstEpisode: "S2E10"
     },
     {
         name: "Dr. Crawley",
         gender: "Male",
         field: "Physics",
         relationship: "Unknown",
-        firstEpisode: "S1E13"
-    },
-    {
-        name: "Dr. Saltzberg",
-        gender: "Male",
-        field: "Physics",
-        relationship: "Unknown",
-        firstEpisode: "S3E15"
-    },
-    {
-        name: "Penny's Landlord",
-        gender: "Male",
-        field: "Property Management",
-        relationship: "Unknown",
-        firstEpisode: "S4E16"
-    },
-    {
-        name: "Building Superintendent",
-        gender: "Male",
-        field: "Building Maintenance",
-        relationship: "Unknown",
-        firstEpisode: "S3E22"
+        firstEpisode: "S3E2"
     },
     {
         name: "Delivery Guy",
@@ -679,73 +586,24 @@ const characters = [
         firstEpisode: "S1E2"
     },
     {
-        name: "Mrs. Koonce",
-        gender: "Female",
-        field: "Neighbor",
-        relationship: "Unknown",
-        firstEpisode: "S4E16"
-    },
-    {
-        name: "Sheldon's Cousin Leopold",
+        name: "Toby Loobenfeld",
         gender: "Male",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S11E24"
-    },
-    {
-        name: "Howard's Cousin",
-        gender: "Male",
-        field: "Unknown",
-        relationship: "Single",
-        firstEpisode: "S8E15"
+        firstEpisode: "S1E10"
     },
     {
         name: "Sanjay Koothrappali",
         gender: "Male",
         field: "Unknown",
         relationship: "Single",
-        firstEpisode: "S3E17"
+        firstEpisode: "S3E4"
     },
     {
         name: "Mrs. Petrescu",
         gender: "Female",
         field: "Neighbor",
         relationship: "Unknown",
-        firstEpisode: "S4E16"
-    },
-    {
-        name: "Leonard's Therapist",
-        gender: "Male",
-        field: "Psychology",
-        relationship: "Unknown",
-        firstEpisode: "S2E15"
-    },
-    {
-        name: "Raj's Therapist",
-        gender: "Female",
-        field: "Psychology",
-        relationship: "Unknown",
-        firstEpisode: "S6E16"
-    },
-    {
-        name: "Comic Book Store Clerk",
-        gender: "Male",
-        field: "Comic Book Store",
-        relationship: "Unknown",
-        firstEpisode: "S2E20"
-    },
-    {
-        name: "University Librarian",
-        gender: "Female",
-        field: "Library Science",
-        relationship: "Unknown",
-        firstEpisode: "S3E21"
-    },
-    {
-        name: "Physics Lab Assistant",
-        gender: "Male",
-        field: "Physics",
-        relationship: "Unknown",
-        firstEpisode: "S1E13"
+        firstEpisode: "S10E6"
     },
 ];
